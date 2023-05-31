@@ -1,0 +1,10 @@
+:root {
+  /* bg_color */
+  --main_bg_color: #407c49;
+  --second_bg_color: #e6e6e6;
+  /* text_color */
+  --main_text_color: #333e48;
+  /* accent_color */
+  --main_accent_color: #f0610d;
+  --second_accent_color: #ee0000;
+}
