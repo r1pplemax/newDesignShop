@@ -8,11 +8,14 @@
   --main_accent_color: #f0610d;
   --second_accent_color: #ee0000;
 }
+<<<<<<< Updated upstream
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+=======
+>>>>>>> Stashed changes
 
 h1,
 h2,
@@ -21,6 +24,7 @@ h4,
 h5,
 h6,
 p {
+<<<<<<< Updated upstream
   padding: 0;
   margin: 0;
 }
@@ -30,10 +34,22 @@ img {
   height: auto;
 }
 
+=======
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+>>>>>>> Stashed changes
 a {
   text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 link {
   text-decoration: underline;
 }
@@ -48,15 +64,26 @@ ul {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+=======
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+>>>>>>> Stashed changes
 }
 
 body {
   font-size: 14px;
+<<<<<<< Updated upstream
   font-family: 'Open Sans', sans-serif;
+=======
+  font-family: 'Roboto Slab', serif;
+>>>>>>> Stashed changes
   color: var(--main_text_color);
 }
 
 /* -----=====HEADER=====----- */
+<<<<<<< Updated upstream
 .info__bar {
   height: 120px;
   background-color: var(--main_bg_color);
@@ -97,3 +124,5 @@ body {
 .social-link:not(last-child) {
   margin-left: 10px;
 }
+=======
+>>>>>>> Stashed changes
