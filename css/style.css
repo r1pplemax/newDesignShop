@@ -8,14 +8,11 @@
   --main_accent_color: #f0610d;
   --second_accent_color: #ee0000;
 }
-<<<<<<< Updated upstream
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-=======
->>>>>>> Stashed changes
 
 h1,
 h2,
@@ -24,7 +21,6 @@ h4,
 h5,
 h6,
 p {
-<<<<<<< Updated upstream
   padding: 0;
   margin: 0;
 }
@@ -34,22 +30,10 @@ img {
   height: auto;
 }
 
-=======
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
->>>>>>> Stashed changes
 a {
   text-decoration: none;
 }
 
-<<<<<<< Updated upstream
 link {
   text-decoration: underline;
 }
@@ -64,65 +48,107 @@ ul {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-=======
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
->>>>>>> Stashed changes
 }
 
 body {
   font-size: 14px;
-<<<<<<< Updated upstream
   font-family: 'Open Sans', sans-serif;
-=======
-  font-family: 'Roboto Slab', serif;
->>>>>>> Stashed changes
   color: var(--main_text_color);
 }
 
 /* -----=====HEADER=====----- */
-<<<<<<< Updated upstream
-.info__bar {
-  height: 120px;
-  background-color: var(--main_bg_color);
-  margin: 0 auto;
+
+/* HEADER-SEARCH-INPUT   */
+
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
 }
-.info__list {
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #407c49;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: 500px;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
 }
-.info__list--item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
 }
-.icon-svg {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
+/* styling of animated border */
+.form:before {
+  content: '';
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
 }
-.info__item--text {
-  color: #fff;
-  margin-left: 10px;
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
 }
-.lang__list {
-  display: flex;
+
+input:focus {
+  outline: none;
 }
-.lang__list--item {
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
 }
-.lang__list--item:not(:last-child) {
-  margin-left: 10px;
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
 }
-.social__list {
-  display: flex;
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
 }
-.social-link {
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
 }
-.social-link:not(last-child) {
-  margin-left: 10px;
+
+/* icon-instagram */
+
+:instagram {
+  --instagram-color: linear-gradient(
+    45deg,
+    rgba(249, 237, 50, 1) 0%,
+    rgba(238, 42, 123, 1) 70%,
+    rgba(0, 40, 241, 1) 100%
+  );
 }
-=======
->>>>>>> Stashed changes
